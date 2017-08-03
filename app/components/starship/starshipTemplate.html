@@ -21,7 +21,11 @@
     <br>
     <button ng-hide="ship.fullDetails" ng-click="ship.fullDetails = true"> See More Info </button>
     <br ng-hide="ship.fullDetails">
+    <button ng-hide="!ship.fullDetails" ng-click="ship.fullDetails = false"> Hide Info </button>
+    <br ng-hide="!ship.fullDetails">
     <button ng-click="ship.onPurchase()"> Buy Now!!!!! </button>
+    <br>
+    <button ng-click="ship.goToHyperSpace()"> Go To Hyperspace! </button>
     <br>
     <br>
     <br>
