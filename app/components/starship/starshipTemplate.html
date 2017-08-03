@@ -1,0 +1,16 @@
+<div>   
+    <div ng-if="ship.owner">The {{ship.details.name}} is owned by {{ship.owner}}</div>
+    <div>Name: {{ship.details.name}}</div>
+    <div>id: {{ship.details.id}}</div>
+    <div>Cost (credits): {{ship.details.cost_in_credits}}</div>
+    <div>Manufacturer: {{ship.details.manufacturer}}</div>
+    <div>Crew: {{ship.details.crew}}</div>
+    <div>Passengers: {{ship.details.passengers}}</div>
+    <br>
+    <button ui-sref="starship({id:ship.details.id})"> See More Info </button>
+    <br>
+    <button ng-click="ship.onPurchase()"> Buy Now!!!!! </button>
+    <br>
+    <br>
+    <br>
+</div>

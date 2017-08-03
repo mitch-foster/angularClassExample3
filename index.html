@@ -7,10 +7,6 @@
     <title>Document</title>
 </head>
 <body ng-app="starwars">
-    <div>
-        <p>Starwars</p>
-    </div>
-    <br>
     <ui-view></ui-view>
     <!-- ****Angular needs to be first, then any third party angular items, and last your app.js file**** -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js'></script> 
@@ -23,6 +19,6 @@
     <!--SERVICES-->
     <script src='app/services/starshipsSrvc.js'></script>
     <!--COMPONENTS-->
-    <script src='app/components/starshipsComp.js'></script>
+    <script src='app/components/starship/starshipComp.js'></script>
 </body>
 </html>
