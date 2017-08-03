@@ -7,6 +7,7 @@ angular.module('starwars').component('starship', {
         owner:'@',
         details:'<',
         onPurchase:'&',
+        fullDetails:'<'
     },
     controllerAs:'ship',
     templateUrl:'app/components/starship/starshipTemplate.html',
@@ -16,4 +17,4 @@ angular.module('starwars').component('starship', {
 
 //BINDING @ is string binding
 //BINDING < is one way binding; pass through a variable which could be an object, array, etc.
-//BINDING @ is action binding; pass through javascript or a function
+//BINDING & is action binding; pass through javascript or a function

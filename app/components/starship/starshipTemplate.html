@@ -1,14 +1,26 @@
 <div>   
     <div ng-if="ship.owner">The {{ship.details.name}} is owned by {{ship.owner}}</div>
     <div>Name: {{ship.details.name}}</div>
-    <div>id: {{ship.details.id}}</div>
     <div>Cost (credits): {{ship.details.cost_in_credits}}</div>
-    <div>Manufacturer: {{ship.details.manufacturer}}</div>
-    <div>Crew: {{ship.details.crew}}</div>
-    <div>Passengers: {{ship.details.passengers}}</div>
+    <div ng-show="ship.fullDetails">
+        <div>id: {{ship.details.id}}</div>
+        <div>Manufacturer: {{ship.details.manufacturer}}</div>
+        <div>Crew: {{ship.details.crew}}</div>
+        <div>Passengers: {{ship.details.passengers}}</div>
+        <div>Length: {{ship.details.length}}</div>
+        <div>Max Atmosphering Speed: {{ship.details.max_atmosphering_speed}}</div>
+        <div>Cargo Capacity: {{ship.details.cargo_capacity}}</div>
+        <div>Consumables: {{ship.details.consumables}}</div>
+        <div>Hyperdrive Rating: {{ship.details.hyperdrive_rating}}</div>
+        <div>MGLT: {{ship.details.MGLT}}</div>
+        <div>Starship Class: {{ship.details.starship_class}}</div>
+        <div>Pilots: {{ship.details.pilots}}</div>
+    </div>
     <br>
-    <button ui-sref="starship({id:ship.details.id})"> See More Info </button>
+    <button ui-sref="starship({id:ship.details.id})"> Visit {{ship.details.name}} Page </button>
     <br>
+    <button ng-hide="ship.fullDetails" ng-click="ship.fullDetails = true"> See More Info </button>
+    <br ng-hide="ship.fullDetails">
     <button ng-click="ship.onPurchase()"> Buy Now!!!!! </button>
     <br>
     <br>
