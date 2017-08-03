@@ -1,0 +1,29 @@
+Good setup for the files/folders
+
+
+app
+    app.js - definite module name and inject any modules (ui.router)
+    views
+        login
+            loginCtrl.js
+            loginTemplate.html
+        product
+            productCtrl.js
+            productTemplate.html
+        newDeals
+            newDealsCtrl.js
+            newDealsTemplate.html
+    components
+        productDisplay
+            productDisplayCtrl.js
+            productDisplayTemplate.html
+    services
+        productsService.js
+        usersService.js
+    assets
+        images, movies, etc
+    vendors
+        third party info
+
+
+UI Router will not allow fat arrow functions

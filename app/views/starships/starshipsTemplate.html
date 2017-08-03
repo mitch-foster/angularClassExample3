@@ -1,0 +1,14 @@
+<div>
+    <h1>Starships Page</h1>
+</div>
+<div ng-repeat="ship in data">
+    <div>Name: {{ship.name}}</div>
+    <div>id: {{ship.id}}</div>
+    <div>Cost (credits): {{ship.cost_in_credits}}</div>
+    <div>Manufacturer: {{ship.manufacturer}}</div>
+    <div>Crew: {{ship.crew}}</div>
+    <div>Passengers: {{ship.passengers}}</div>
+    <button ui-sref="starship({id:ship.id})"> See More Info </button>
+    <br>
+    <br>
+</div>
